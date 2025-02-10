@@ -19,7 +19,7 @@ const CameraCapture: React.FC<CameraCaptureProps> = ({onImageCapture}) => {
     return (
         <div>
             <div>
-                <label>
+                <label className="border border-black bg-blue-400 rounded">
                     <span>写真を撮影</span>
                     <input 
                         type="file"
