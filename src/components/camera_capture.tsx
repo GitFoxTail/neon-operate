@@ -1,4 +1,5 @@
 import { useState, type ChangeEvent } from "react";
+import { FaCamera } from "react-icons/fa";
 
 interface CameraCaptureProps {
     onImageCapture?: (imageUrl: string) => void;
@@ -17,10 +18,10 @@ const CameraCapture: React.FC<CameraCaptureProps> = ({onImageCapture}) => {
     }
 
     return (
-        <div>
-            <div>
-                <label>
-                    <span>写真を撮影</span>
+        <div className="grid w-full h-60 place-items-center">
+            <div className="grid rounded-full border-blue-400 hover:bg-blue-400 border-4 w-40 h-40 place-items-center">
+                <label className="grid w-full h-full place-items-center cursor-pointer">
+                    <FaCamera className="w-1/2 h-1/2"/>
                     <input 
                         type="file"
                         accept="image/*"
