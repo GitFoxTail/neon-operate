@@ -29,7 +29,12 @@ export default function FileUploader(){
 
     return (
         <div>
-            <input type="file" onChange={handleFileChange} />
+            <input
+                type="file"
+                onChange={handleFileChange}
+                accept="image/*"
+                capture="environment"
+            />
             <button onClick={handleAnalyze} disabled={!file}>
                 ドキュメントを分析
             </button>
