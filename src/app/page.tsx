@@ -1,12 +1,20 @@
 "use client"
-import Image from "next/image";
-import { useState } from "react";
 import CameraCapture from "@/components/camera_capture";
 
-export default function Home() {
+import React from "react";
+import DocumentAnalyzer from "@/components/DocumentAnalyzer";
+import FileUploader from "@/components/FileUploader";
+
+export default function HomePage() {
   return (
-    <div>
-      <CameraCapture />
-    </div>
+    <main>
+      <div>
+        <CameraCapture />
+      </div>
+      <h1>ドキュメント分析ツール</h1>
+      <DocumentAnalyzer />
+      <hr />
+      <FileUploader />
+    </main>
   );
 }
