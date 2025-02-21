@@ -41,7 +41,7 @@ export default function FileUploader(){
             <div className="grid rounded-full border-blue-400 hover:bg-blue-400 border-4 w-40 h-40 place-items-center">
                 <label className="grid w-full h-full place-items-center cursor-pointer">
                     <FaCamera className="w-1/2 h-1/2"/>
-                    <input type="file" onChange={handleFileChange} className="hidden"/>
+                    <input type="file" onChange={handleFileChange} className="hidden" capture="environment" />
                 </label>
             </div>
             {/* <button onClick={handleAnalyze} disabled={!file} className="border m-5 text-xl">
